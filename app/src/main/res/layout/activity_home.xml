@@ -10,8 +10,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.s2pet.s2pet.Home">
 
+
     <TextView
+        android:text="s2Pet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vsf Japonês!" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2"
+        android:textSize="80sp" />
 </RelativeLayout>
