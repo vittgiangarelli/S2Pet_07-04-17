@@ -1,5 +1,6 @@
 package com.example.s2pet.s2pet;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -19,7 +20,7 @@ public class MenuPrincipal extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_lateral);
+        setContentView(R.layout.menulateral);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -55,7 +56,7 @@ public class MenuPrincipal extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_principal, menu);
+        getMenuInflater().inflate(R.menu.menu_lateral, menu);
         return true;
     }
 
@@ -80,18 +81,24 @@ public class MenuPrincipal extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        if (id == R.id.cad_dono) {
+            Intent dono = new Intent(MenuPrincipal.this, Cadastro_Dono.class);
+            startActivity(dono);
+        } else if (id == R.id.cad_pet) {
+            Intent pet = new Intent(MenuPrincipal.this, Cadastro_Pet.class);
+            startActivity(pet);
+        } else if (id == R.id.vacina) {
+            Intent vacina = new Intent(MenuPrincipal.this, Vacina.class);
+            startActivity(vacina);
+        } else if (id == R.id.login) {
+            Intent login = new Intent(MenuPrincipal.this, Login.class);
+            startActivity(login);
+        } else if (id == R.id.compartilhar) {
+            Intent compartilhar = new Intent(MenuPrincipal.this, Compartilhar.class);
+            startActivity(compartilhar);
+        } else if (id == R.id.contato) {
+            Intent contato = new Intent(MenuPrincipal.this, Contato.class);
+            startActivity(contato);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

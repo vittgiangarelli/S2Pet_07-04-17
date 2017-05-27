@@ -10,4 +10,6 @@ public class Inicial extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
     }
+
+
 }

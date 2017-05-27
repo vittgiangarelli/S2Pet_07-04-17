@@ -1,7 +1,6 @@
 package com.example.s2pet.s2pet;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -11,7 +10,6 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -25,7 +23,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_lateral);
+        setContentView(R.layout.menulateral);
 
         database = FirebaseDatabase.getInstance();  //TODO 8 - esta linha atribui a variável a instâcia da base de dados do Firebase
         reference = database.getReference("Donos");  //TODO 9 - esta linha atribui a variável uma referência("tabela") da base de dados
@@ -51,7 +49,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
             // Handle navigation view item clicks here.
             int id = item.getItemId();
 
-            if (id == R.id.nav_share) {
+            if (id == R.id.login) {
 
                 Intent intent = new Intent(this, MenuPrincipal.class);
                 startActivity(intent);
@@ -61,7 +59,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 Toast.makeText(MainActivity.this, "Teste do menu", Toast.LENGTH_SHORT).show();
                 // Handle the camera action
 
-            } else if (id == R.id.nav_pos_login) {
+            } else if (id == R.id._login) {
 
                 Intent intent = new Intent(MainActivity.this, PosLogin.class);
                 startActivity(intent);
@@ -91,7 +89,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         @Override
         public boolean onCreateOptionsMenu(Menu menu) {
             // Inflate the menu; this adds items to the action bar if it is present.
-            getMenuInflater().inflate(R.menu.menu_principal, menu);
+            getMenuInflater().inflate(R.menu.menu_lateral, menu);
             return true;
         }
     }

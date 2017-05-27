@@ -29,7 +29,7 @@
         <activity android:name=".Cadastro_Pet" />
         <activity android:name=".Inicial" />
         <activity android:name=".Perfil" />
-        <activity android:name=".Carteira_Vacina" />
+        <activity android:name=".Vacina" />
         <activity
             android:name=".activity_login"
             android:label="@string/title_activity_login" />
