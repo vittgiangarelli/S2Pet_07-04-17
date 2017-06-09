@@ -13,7 +13,7 @@
         android:label="@string/nome_app"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Splash">
+        <activity android:name=".Views.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,24 +21,24 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Home" />
+        <activity android:name=".Views.Home" />
 
-        <activity android:name=".Login" />
-        <activity android:name=".Contato" />
-        <activity android:name=".Cadastro_Dono" />
-        <activity android:name=".Cadastro_Pet" />
-        <activity android:name=".Inicial" />
-        <activity android:name=".Perfil" />
-        <activity android:name=".Vacina" />
+        <activity android:name=".Views.Login" />
+        <activity android:name=".Views.Contato" />
+        <activity android:name=".Views.Cadastro_Dono" />
+        <activity android:name=".Views.Cadastro_Pet" />
+        <activity android:name=".Views.Inicial" />
+        <activity android:name=".Views.Perfil" />
+        <activity android:name=".Views.Vacina" />
         <activity
-            android:name=".activity_login"
+            android:name=".Views.activity_login"
             android:label="@string/title_activity_login" />
         <activity
-            android:name=".MenuPrincipal"
+            android:name=".Views.MenuPrincipal"
             android:label="@string/title_activity_menu_principal"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MenuLateral"
+            android:name=".Views.MenuLateral"
             android:label="@string/title_activity_menu_lateral"
             android:theme="@style/AppTheme.NoActionBar"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->

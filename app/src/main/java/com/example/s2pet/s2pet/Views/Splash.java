@@ -1,20 +1,13 @@
-package com.example.s2pet.s2pet;
+package com.example.s2pet.s2pet.Views;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.graphics.drawable.RotateDrawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
-import android.widget.Space;
 import android.os.Handler;
 
 
-import static com.example.s2pet.s2pet.R.layout.splash;
+import com.example.s2pet.s2pet.R;
 
 /**
  * Created by aluno on 05/05/2017.
@@ -36,7 +29,7 @@ public class Splash extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent home = new Intent(Splash.this, Home.class);
+                Intent home = new Intent(Splash.this, Cadastro_Dono.class);
                 startActivity(home);
                 finish();
             }

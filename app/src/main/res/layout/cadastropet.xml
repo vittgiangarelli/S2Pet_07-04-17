@@ -8,6 +8,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.s2pet.s2pet.Cadastro_Pet">
+    tools:context="com.example.s2pet.s2pet.Views.Cadastro_Pet">
 
 </RelativeLayout>

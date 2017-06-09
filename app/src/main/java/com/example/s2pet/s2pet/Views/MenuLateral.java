@@ -1,4 +1,4 @@
-package com.example.s2pet.s2pet;
+package com.example.s2pet.s2pet.Views;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.s2pet.s2pet.Compartilhar;
+import com.example.s2pet.s2pet.R;
 
 public class MenuLateral extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

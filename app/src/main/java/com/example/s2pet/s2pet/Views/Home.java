@@ -1,4 +1,4 @@
-package com.example.s2pet.s2pet;
+package com.example.s2pet.s2pet.Views;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.s2pet.s2pet.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
