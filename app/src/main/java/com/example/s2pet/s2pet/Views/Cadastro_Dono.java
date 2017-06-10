@@ -1,5 +1,6 @@
 package com.example.s2pet.s2pet.Views;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -88,6 +89,12 @@ public class Cadastro_Dono extends AppCompatActivity {
             lista.setText(listaNomes);
             vacina.setText("");
         }
+
+    }
+    public void irPerfil(View v) {
+        Intent perfil = new Intent(this, Perfil.class);
+
+        startActivity(perfil);
 
     }
 }

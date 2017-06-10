@@ -53,7 +53,7 @@
         android:layout_centerHorizontal="true" />
 
     <EditText
-        android:id="@+id/NumCpfR"
+        android:id="@+id/numCpfR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Numero do CPF"

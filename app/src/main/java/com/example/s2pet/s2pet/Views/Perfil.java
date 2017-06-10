@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.s2pet.s2pet.Models.Dono;
@@ -26,6 +27,7 @@ public class Perfil extends AppCompatActivity {
     TextView email;
     TextView nomePet;
     List<Dono> donos;
+    TextView numcpfR;
     private FirebaseDatabase database; //TODO 6 - linha que cria uma instâcia de um obejto do tipo FirebaseDatabase
     private DatabaseReference reference; //TODO 7 - linha que cria uma instâcia de um obejto do tipo DatabaseReference
 
@@ -35,26 +37,23 @@ public class Perfil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.perfil);
 
-        Intent intent = getIntent();
-
-        Bundle bundle = intent.getExtras();
-
-        String nomeD = bundle.getString("nomeDono");
+      /*String nomeD = getString("nomeDono");
         String cpfD = bundle.getString("cpf");
         String emailD = bundle.getString("email");
-        String nomeP = bundle.getString("nomePet");
+        String nomeP = bundle.getString("nomePet");*/
 
         nomeDono = (TextView) findViewById(R.id.txtNomeDono);
         cpf = (TextView) findViewById(R.id.txtCpf);
         email = (TextView) findViewById(R.id.txtEmail);
         nomePet = (TextView) findViewById(R.id.nomePet);
+        numcpfR = (EditText)findViewById(R.id.numCpfR);
         donos = new ArrayList<>();
         database =  FirebaseDatabase.getInstance();  //TODO 8 - esta linha atribui a variável a instâcia da base de dados do Firebase
         reference = database.getReference(Referencias.REFERENCIADONO);  //TODO 9 - esta linha atribui a variável uma referência("tabela") da base de dados
-        nomeDono.setText(nomeD);
+        /*nomeDono.setText(nomeD);
         cpf.setText(cpfD);
         email.setText(emailD);
-        nomePet.setText(nomeP);
+        nomePet.setText(nomeP);*/
         recuperarDadosFirebase(); //TODO 21 - invocar o método recém criado.
 
     }
@@ -67,9 +66,8 @@ public class Perfil extends AppCompatActivity {
 
         for (Dono d: donos) {
 
-            if(d.getCpf().equals(cpf.getText().toString())){
+            if(d.getCpf().equals(numcpfR.getText().toString())){
                 Log.i("LOG", "entrei no IF");
-                Intent intent = new Intent(this, Perfil.class);
 
                 nomeDono.setText(d.getNomeDono());
                 cpf.setText(d.getCpf());
