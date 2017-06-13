@@ -1,8 +1,7 @@
 package com.example.s2pet.s2pet.Views;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -45,7 +44,7 @@ public class Perfil extends AppCompatActivity {
         nomeDono = (TextView) findViewById(R.id.txtNomeDono);
         cpf = (TextView) findViewById(R.id.txtCpf);
         email = (TextView) findViewById(R.id.txtEmail);
-        nomePet = (TextView) findViewById(R.id.nomePet);
+        nomePet = (TextView) findViewById(R.id.txtnomePet);
         numcpfR = (EditText)findViewById(R.id.numCpfR);
         donos = new ArrayList<>();
         database =  FirebaseDatabase.getInstance();  //TODO 8 - esta linha atribui a variável a instâcia da base de dados do Firebase

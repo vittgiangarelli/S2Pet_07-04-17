@@ -29,7 +29,7 @@ public class Splash extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent home = new Intent(Splash.this, Cadastro_Dono.class);
+                Intent home = new Intent(Splash.this, MenuPrincipal.class);
                 startActivity(home);
                 finish();
             }
