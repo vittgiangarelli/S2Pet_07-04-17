@@ -32,7 +32,7 @@ public class Dono {
             resultado.put("nomeDono", nomeDono);
             resultado.put("cpf", cpf);
             resultado.put("email", email);
-            resultado.put("Pet", nomePet);
+            resultado.put("pet", nomePet);
             resultado.put("listaVacina", listaVacina);
             return resultado;
         }
