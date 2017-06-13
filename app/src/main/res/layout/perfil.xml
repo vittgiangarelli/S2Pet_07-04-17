@@ -10,6 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.s2pet.s2pet.Views.Perfil">
 
+<<<<<<< HEAD
     <EditText
         android:id="@+id/numCpfR"
         android:layout_width="match_parent"
@@ -19,46 +20,69 @@
         android:layout_alignParentStart="true" />
 
 
+=======
+>>>>>>> ec25b2f0ef9e4034441cb71baa920a1b049aedbc
     <TextView
         android:id="@+id/txtNomeDono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/numCpfR"/>
+=======
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+>>>>>>> ec25b2f0ef9e4034441cb71baa920a1b049aedbc
 
     <TextView
         android:id="@+id/txtCpf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_below="@id/txtNomeDono"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/txtNomeDono"/>
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_below="@id/txtCpf"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/txtCpf"/>
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/nomePets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:textSize="20sp"
         android:text="ooooo"
+=======
+        android:layout_below="@id/txtEmail"
+>>>>>>> ec25b2f0ef9e4034441cb71baa920a1b049aedbc
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/txtEmail"/>
+        android:layout_centerVertical="true"
+        android:textSize="20sp" />
 
     <Button
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recuperar"
-        android:onClick="recuperar"
-        android:id="@+id/button3"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="recuperar"
+        android:text="Recuperar" />
 
+<<<<<<< HEAD
+=======
+    <EditText
+        android:id="@+id/numCpfR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Numero do CPF" />
+
+>>>>>>> ec25b2f0ef9e4034441cb71baa920a1b049aedbc
 </RelativeLayout>

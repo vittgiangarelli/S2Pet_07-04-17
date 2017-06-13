@@ -3,6 +3,11 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/perfil"
+            android:icon="@drawable/perfil"
+            android:title="Perfil" />
+
+        <item
             android:id="@+id/cad_dono"
             android:icon="@drawable/cad_dono"
             android:title="Cadastro" />
@@ -18,6 +23,7 @@
             android:id="@+id/login"
             android:icon="@drawable/login"
             android:title="Login" />
+
     </group>
 
     <item android:title="Me ajuda">
